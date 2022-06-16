@@ -1,0 +1,110 @@
+.feature
+{
+    @include breakpoint-up(large)
+    {
+        margin-left: 1.5625rem;
+        margin-right: 1.5625rem;
+    }
+    &__card
+    {
+        text-align: center;
+   
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 0 20px #eee;
+
+        padding: 2.1875rem;
+        &:not(:last-child)
+        {
+            margin-bottom: 2.5rem;
+        }
+        &:last-child
+        {
+            margin-bottom: 7.5rem;
+        }
+
+
+        @include breakpoint-up(large)
+        {
+            display: flex;
+            align-items: center;
+            gap: 10rem;
+            text-align: left;
+            padding: 55px 24px 55px 120px;
+            &:last-child
+            {
+                margin-bottom: 10rem;
+            }
+        }
+
+
+        &.card1
+        {
+            .feature__image
+            {
+                order: 2;
+            }
+            .feature__text
+            {
+                order: 1;
+            }
+        }
+
+        &.card3
+        {
+            .feature__image
+            {
+                order: 2;
+            }
+            .feature__text
+            {
+                order: 1;
+            }
+        }
+
+        
+    }
+
+    &__image
+    {
+        flex: 50%;
+        img 
+        {
+            width: 100%;
+        }
+        @include breakpoint-down(medium)
+        {
+            margin-bottom: 3.75rem;
+        }
+    }
+    &__text
+    {
+        flex: 50%;
+    }
+
+    &__heading
+    {
+        font-size: 1.375rem;
+        color: $veryDarkCyan;
+        font-weight: 700;
+        margin-bottom: 1.125rem;
+        @include breakpoint-up(large)
+        {
+            font-size: 1.875rem;
+        }
+
+    }
+    &__description
+    {
+        font-size: $smallFont;
+        line-height: 1.5;
+        @include breakpoint-up(large)
+        {
+            font-size: $bodyFont;
+        }
+    }
+
+    
+}
+
+

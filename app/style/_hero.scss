@@ -1,0 +1,64 @@
+.hero
+{
+
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+    padding-bottom: 2.1875rem;
+    @include breakpoint-up(large)
+    {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        padding-bottom: 4.0625rem;
+    }
+
+    &__text
+    {
+        flex: 4;
+        @include breakpoint-down(medium)
+        {
+            text-align: center;
+        }
+
+    }
+
+    &__heading
+    {
+        font-family: 'Open Sans', sans-serif;;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $veryDarkCyan;
+        margin-bottom: 2rem;
+        @include breakpoint-up(large)
+        {
+            font-size: 2.625rem;
+            margin-bottom: 2.4375rem;
+        }
+        
+    }
+
+    &__description
+    {
+        font-size: $bodyFont;
+        color: $veryDarkCyan;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        
+    }
+    &__ctaButton
+    {
+        margin-bottom: 3.375rem;
+    }
+
+    &__image
+    {
+        flex: 6;
+        img 
+        {
+            width: 100%;
+        }
+        
+    }
+
+
+}
