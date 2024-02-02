@@ -1,1 +1,1 @@
-[# huddle](https://miyaadjoy.github.io/huddle/)
+[# huddle: https://miyaadshahjoy.github.io/huddle/](https://miyaadshahjoy.github.io/huddle/)
